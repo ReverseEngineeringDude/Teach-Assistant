@@ -73,3 +73,6 @@ class Marks(Base):
     exam_id = Column(Integer, ForeignKey('exams.id'), nullable=False)
     total_marks = Column(Integer, nullable=False)
     results = Column(JSONB, nullable=False)
+    max_marks = Column(Integer, nullable=False)
+
+    
